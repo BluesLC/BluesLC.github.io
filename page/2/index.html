@@ -395,6 +395,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/04/06/e5-bf-ab-e9-80-9f-e6-8e-92-e5-ba-8f/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/04/06/e5-bf-ab-e9-80-9f-e6-8e-92-e5-ba-8f/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -574,6 +584,16 @@ void quickSort(int data[], int low, int high) {
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/03/29/hello-world-1/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/03/29/hello-world-1/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -938,6 +958,31 @@ void quickSort(int data[], int low, int high) {
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'lvmmPVlLovb7rEI4Eo3z2sU1-gzGzoHsz',
+        appKey: 'I3W2bNegoxEUQvn0SOb7SQRt',
+        placeholder: '来啊，一起玩啊！',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: false
+    });
+  </script>
 
 
 
