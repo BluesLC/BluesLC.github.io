@@ -108,28 +108,24 @@
 
 
 
-  <meta name="description" content="今天刷QQ,看到群里甩了张这样的表情包  很有意思,看图片可以知道是”tan90°”表情包的衍生版,那么问题来了  “调用基类指针指向的派生类的非虚的析构函数”是个什么东西?  为什么它不可能呢? 首先,我们写出代码#include&amp;lt;iostream&amp;gt;  using namespace std;  class Base { public:     Base() = default;">
+  <meta name="description" content="全局变量未赋值会默认初始化为0; 局部变量不会">
 <meta property="og:type" content="article">
-<meta property="og:title" content="&quot;调用基类指针指向的派生类的非虚的析构函数&quot;是个什么东西?">
-<meta property="og:url" content="https://blog.luchong.xyz/2018/04/09/e8-b0-83-e7-94-a8-e5-9f-ba-e7-b1-bb-e6-8c-87-e9-92-88-e6-8c-87-e5-90-91-e7-9a-84-e6-b4-be-e7-94-9f-e7-b1-bb-e7-9a-84-e9-9d-9e-e8-99-9a-e7-9a-84-e6-9e-90-e6-9e-84-e5-87-bd-e6-95-b0-e6-98-af/index.html">
+<meta property="og:title" content="261">
+<meta property="og:url" content="https://blog.luchong.xyz/2018/08/05/草稿1/index.html">
 <meta property="og:site_name" content="LC学编程">
-<meta property="og:description" content="今天刷QQ,看到群里甩了张这样的表情包  很有意思,看图片可以知道是”tan90°”表情包的衍生版,那么问题来了  “调用基类指针指向的派生类的非虚的析构函数”是个什么东西?  为什么它不可能呢? 首先,我们写出代码#include&amp;lt;iostream&amp;gt;  using namespace std;  class Base { public:     Base() = default;">
+<meta property="og:description" content="全局变量未赋值会默认初始化为0; 局部变量不会">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://luchong.xyz/wp-content/uploads/2018/07/TIM图片20180715170449.jpg">
-<meta property="og:image" content="http://luchong.xyz/wp-content/uploads/2018/07/TIM截图20180715171154-300x202.jpg">
-<meta property="og:image" content="http://luchong.xyz/wp-content/uploads/2018/07/TIM截图20180715171301-300x181.jpg">
-<meta property="og:updated_time" content="2018-08-17T11:27:03.932Z">
+<meta property="og:updated_time" content="2018-08-17T11:27:03.935Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="&quot;调用基类指针指向的派生类的非虚的析构函数&quot;是个什么东西?">
-<meta name="twitter:description" content="今天刷QQ,看到群里甩了张这样的表情包  很有意思,看图片可以知道是”tan90°”表情包的衍生版,那么问题来了  “调用基类指针指向的派生类的非虚的析构函数”是个什么东西?  为什么它不可能呢? 首先,我们写出代码#include&amp;lt;iostream&amp;gt;  using namespace std;  class Base { public:     Base() = default;">
-<meta name="twitter:image" content="http://luchong.xyz/wp-content/uploads/2018/07/TIM图片20180715170449.jpg">
+<meta name="twitter:title" content="261">
+<meta name="twitter:description" content="全局变量未赋值会默认初始化为0; 局部变量不会">
 
 
 
 
 
 
-  <link rel="canonical" href="https://blog.luchong.xyz/2018/04/09/e8-b0-83-e7-94-a8-e5-9f-ba-e7-b1-bb-e6-8c-87-e9-92-88-e6-8c-87-e5-90-91-e7-9a-84-e6-b4-be-e7-94-9f-e7-b1-bb-e7-9a-84-e9-9d-9e-e8-99-9a-e7-9a-84-e6-9e-90-e6-9e-84-e5-87-bd-e6-95-b0-e6-98-af/"/>
+  <link rel="canonical" href="https://blog.luchong.xyz/2018/08/05/草稿1/"/>
 
 
 
@@ -139,7 +135,7 @@
   };
 </script>
 
-  <title>"调用基类指针指向的派生类的非虚的析构函数"是个什么东西? | LC学编程</title>
+  <title>261 | LC学编程</title>
   
 
 
@@ -312,7 +308,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.luchong.xyz/2018/04/09/e8-b0-83-e7-94-a8-e5-9f-ba-e7-b1-bb-e6-8c-87-e9-92-88-e6-8c-87-e5-90-91-e7-9a-84-e6-b4-be-e7-94-9f-e7-b1-bb-e7-9a-84-e9-9d-9e-e8-99-9a-e7-9a-84-e6-9e-90-e6-9e-84-e5-87-bd-e6-95-b0-e6-98-af/">
+    <link itemprop="mainEntityOfPage" href="https://blog.luchong.xyz/2018/08/05/草稿1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LC">
@@ -329,7 +325,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">"调用基类指针指向的派生类的非虚的析构函数"是个什么东西?
+          <h1 class="post-title" itemprop="name headline">261
               
             
           </h1>
@@ -354,7 +350,7 @@
                 
               
 
-              <time title="创建时间：2018-04-09 23:59:52" itemprop="dateCreated datePublished" datetime="2018-04-09T23:59:52+08:00">2018-04-09</time>
+              <time title="创建时间：2018-08-05 11:53:11" itemprop="dateCreated datePublished" datetime="2018-08-05T11:53:11+08:00">2018-08-05</time>
             
 
             
@@ -430,86 +426,7 @@
       
 
       
-        <p>今天刷QQ,看到群里甩了张这样的表情包</p>
-<p><img src="http://luchong.xyz/wp-content/uploads/2018/07/TIM图片20180715170449.jpg" alt=""></p>
-<p>很有意思,看图片可以知道是”tan90°”表情包的衍生版,那么问题来了</p>
-<blockquote>
-<p>“调用基类指针指向的派生类的非虚的析构函数”是个什么东西?</p>
-</blockquote>
-<p>为什么它不可能呢?</p>
-<h3 id="首先-我们写出代码"><a href="#首先-我们写出代码" class="headerlink" title="首先,我们写出代码"></a>首先,我们写出代码</h3><pre><code>#include&lt;iostream&gt;
-
-using namespace std;
-
-class Base {
-public:
-    Base() = default;
-    ~Base() {
-        cout &lt;&lt; &quot;delete base&quot; &lt;&lt; endl;
-    }
-};
-
-class Derived :public Base {
-public:
-    Derived() = default;
-    ~Derived() {
-        cout &lt;&lt; &quot;delete derived&quot; &lt;&lt; endl;
-    }
-};
-
-int main() {
-    Base *p = new Derived();
-    delete p;
-    system(&quot;pause&quot;);
-    return 0;
-}
-</code></pre><p>运行结果:</p>
-<p><img src="http://luchong.xyz/wp-content/uploads/2018/07/TIM截图20180715171154-300x202.jpg" alt=""></p>
-<p>果然没有运行派生类的析构函数</p>
-<h3 id="用正确的写法再写一次"><a href="#用正确的写法再写一次" class="headerlink" title="用正确的写法再写一次"></a>用正确的写法再写一次</h3><pre><code>#include&lt;iostream&gt;
-
-using namespace std;
-
-class Base {
-public:
-    Base() = default;
-    virtual ~Base() {
-        cout &lt;&lt; &quot;delete base&quot; &lt;&lt; endl;
-    }
-};
-
-class Derived :public Base {
-public:
-    Derived() = default;
-    virtual ~Derived() {
-        cout &lt;&lt; &quot;delete derived&quot; &lt;&lt; endl;
-    }
-};
-
-int main() {
-    Base *p = new Derived();
-    delete p;
-    system(&quot;pause&quot;);
-    return 0;
-}
-</code></pre><p>运行结果:</p>
-<p><img src="http://luchong.xyz/wp-content/uploads/2018/07/TIM截图20180715171301-300x181.jpg" alt=""></p>
-<p>这样便正确了</p>
-<h3 id="为什么"><a href="#为什么" class="headerlink" title="为什么?"></a>为什么?</h3><ul>
-<li><p>一旦某个函数被声明成虚函数,则在所有派生类中它都是虚函数</p>
-</li>
-<li><p>由于静态绑定,如果以一个基类指针指向一个派生类对象，那么经由该指针只能访问基类定义的函数</p>
-</li>
-<li><p>如果基类的析构函数不是虚函数,则delete一个指向派生类对象的基类指针将产生未定义的行为</p>
-</li>
-</ul>
-<p>也就是说,要调用基类指针指向的派生类的非虚的析构函数,只能将基类的析构函数定义为非虚的</p>
-<p>而通过基类指针,只能访问基类定义的函数,但是基类的析构函数非虚,于是直接执行了,轮不到派生类的析构函数登场</p>
-<ul>
-<li>基类的引用或指针调用一个虚成员函数时会执行动态绑定</li>
-</ul>
-<p>在正确的写法下,通过基类指针,动态绑定到派生类的虚析构函数上,于是先执行派生类类的析构函数,然后执行基类的析构函数</p>
-<h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><p>[1]《C++ Primer（第5版）》电子工业出版社——第十五章</p>
+        <p>全局变量未赋值会默认初始化为0; 局部变量不会</p>
 
       
     </div>
@@ -537,8 +454,8 @@ int main() {
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/06/e5-bf-ab-e9-80-9f-e6-8e-92-e5-ba-8f/" rel="next" title="快速排序">
-                <i class="fa fa-chevron-left"></i> 快速排序
+              <a href="/2018/07/27/css-e5-ad-a6-e4-b9-a0-e7-ac-94-e8-ae-b0-e4-b8-80/" rel="next" title="css学习笔记(一)">
+                <i class="fa fa-chevron-left"></i> css学习笔记(一)
               </a>
             
           </div>
@@ -547,8 +464,8 @@ int main() {
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/05/06/html-e6-a0-87-e7-ad-be-e9-80-9f-e8-ae-b0/" rel="prev" title="html标签速记">
-                html标签速记 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/08/11/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -594,17 +511,8 @@ int main() {
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -681,22 +589,6 @@ int main() {
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#首先-我们写出代码"><span class="nav-number">1.</span> <span class="nav-text">首先,我们写出代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用正确的写法再写一次"><span class="nav-number">2.</span> <span class="nav-text">用正确的写法再写一次</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么"><span class="nav-number">3.</span> <span class="nav-text">为什么?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考文献"><span class="nav-number">4.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
