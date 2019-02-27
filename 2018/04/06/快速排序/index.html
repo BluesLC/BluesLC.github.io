@@ -108,17 +108,17 @@
 
 
 
-  <meta name="description" content="#include&amp;lt;iostream&amp;gt; void quickSort(int data[], int low, int high) {     if (low &amp;lt; high) {         int left, right, partition;         left = low;         right = high;         partition = data">
+  <meta name="description" content="12345678910111213141516171819202122232425262728293031323334#include&amp;lt;iostream&amp;gt;void quickSort(int data[], int low, int high) &amp;#123;    if (low &amp;lt; high) &amp;#123;        int left, right, partition;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="快速排序">
 <meta property="og:url" content="https://blog.luchong.xyz/2018/04/06/快速排序/index.html">
 <meta property="og:site_name" content="Redemption">
-<meta property="og:description" content="#include&amp;lt;iostream&amp;gt; void quickSort(int data[], int low, int high) {     if (low &amp;lt; high) {         int left, right, partition;         left = low;         right = high;         partition = data">
+<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334#include&amp;lt;iostream&amp;gt;void quickSort(int data[], int low, int high) &amp;#123;    if (low &amp;lt; high) &amp;#123;        int left, right, partition;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-27T15:54:46.510Z">
+<meta property="og:updated_time" content="2019-02-27T16:07:37.913Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="快速排序">
-<meta name="twitter:description" content="#include&amp;lt;iostream&amp;gt; void quickSort(int data[], int low, int high) {     if (low &amp;lt; high) {         int left, right, partition;         left = low;         right = high;         partition = data">
+<meta name="twitter:description" content="12345678910111213141516171819202122232425262728293031323334#include&amp;lt;iostream&amp;gt;void quickSort(int data[], int low, int high) &amp;#123;    if (low &amp;lt; high) &amp;#123;        int left, right, partition;">
 
 
 
@@ -367,7 +367,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-27 23:54:46" itemprop="dateModified" datetime="2019-02-27T23:54:46+08:00">2019-02-27</time>
+                <time title="修改时间：2019-02-28 00:07:37" itemprop="dateModified" datetime="2019-02-28T00:07:37+08:00">2019-02-28</time>
               
             
           </span>
@@ -428,40 +428,8 @@
       
 
       
-        <pre><code>#include&lt;iostream&gt;
-void quickSort(int data[], int low, int high) {
-    if (low &lt; high) {
-        int left, right, partition;
-        left = low;
-        right = high;
-        partition = data[low];
-            while (left &lt; right) {
-                while (left &lt; right &amp;&amp; data[right] &lt; partition)
-                --right;
-                data[left] = data[right];
-                while (left &lt; right &amp;&amp; data[left] &gt; partition)
-                ++left;
-                data[right] = data[left];
-        }
-        data[left] = partition;
-        quickSort(data, low, left - 1);
-        quickSort(data, right + 1, high);
-    }
-    else return;
-}
-
-int main() {
-    int a[] = { 56,54,98,5,11,57,59,99 };
-    for (int i = 0; i &lt; 8; ++i)
-        std::cout &lt;&lt; a[i] &lt;&lt; &quot; &quot;;
-    quickSort(a, 0, 7);
-    std::cout &lt;&lt; std::endl;
-    for (int i = 0; i &lt; 8; ++i)
-        std::cout &lt;&lt; a[i] &lt;&lt; &quot; &quot;;
-    system(&quot;pause&quot;);
-    return 0;
-}
-</code></pre><p>​</p>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#include&lt;iostream&gt;</span><br><span class="line">void quickSort(int data[], int low, int high) &#123;</span><br><span class="line">    if (low &lt; high) &#123;</span><br><span class="line">        int left, right, partition;</span><br><span class="line">        left = low;</span><br><span class="line">        right = high;</span><br><span class="line">        partition = data[low];</span><br><span class="line">            while (left &lt; right) &#123;</span><br><span class="line">                while (left &lt; right &amp;&amp; data[right] &lt; partition)</span><br><span class="line">                --right;</span><br><span class="line">                data[left] = data[right];</span><br><span class="line">                while (left &lt; right &amp;&amp; data[left] &gt; partition)</span><br><span class="line">                ++left;</span><br><span class="line">                data[right] = data[left];</span><br><span class="line">        &#125;</span><br><span class="line">        data[left] = partition;</span><br><span class="line">        quickSort(data, low, left - 1);</span><br><span class="line">        quickSort(data, right + 1, high);</span><br><span class="line">    &#125;</span><br><span class="line">    else return;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main() &#123;</span><br><span class="line">    int a[] = &#123; 56,54,98,5,11,57,59,99 &#125;;</span><br><span class="line">    for (int i = 0; i &lt; 8; ++i)</span><br><span class="line">        std::cout &lt;&lt; a[i] &lt;&lt; &quot; &quot;;</span><br><span class="line">    quickSort(a, 0, 7);</span><br><span class="line">    std::cout &lt;&lt; std::endl;</span><br><span class="line">    for (int i = 0; i &lt; 8; ++i)</span><br><span class="line">        std::cout &lt;&lt; a[i] &lt;&lt; &quot; &quot;;</span><br><span class="line">    system(&quot;pause&quot;);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>​</p>
 
       
     </div>
